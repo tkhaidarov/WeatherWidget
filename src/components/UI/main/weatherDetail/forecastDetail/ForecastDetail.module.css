@@ -1,0 +1,32 @@
+.forecastDetail{
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+
+}
+.icon{
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon svg{
+    width: 70%;
+    height: 70%;
+}
+.weatherValue{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    width: 10rem;
+    color: #939cb0;
+}
+.valueDescription{
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}

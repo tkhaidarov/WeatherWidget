@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+.forecast{
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 30rem;
+    background: #4793ff;
+    color: #fff;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.weatherCardWrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 2%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    background: #fff;
+    padding: 1rem;
+}

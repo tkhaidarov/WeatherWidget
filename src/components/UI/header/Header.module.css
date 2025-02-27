@@ -1,0 +1,34 @@
+.searchContainer {
+  width: 32%;
+  position: relative;
+}
+.searchBar {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.searchInput {
+  border: 2px solid transparent;
+  width: 100%;
+  height: 4rem;
+  border-radius: 2.2rem;
+  padding: 1rem 5rem 1rem 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+.searchInput:focus {
+  outline: none;
+    border-color: rgba(45, 42, 84, 0.7);
+}
+.searchButton {
+  position: absolute;
+  top: 0.4rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btnIcon {
+  transition: filter 0.2s ease-in-out;
+}
+.btnIcon:hover {
+  filter: drop-shadow(2px 2px 1px rgba(45, 42, 84, 1));
+}
