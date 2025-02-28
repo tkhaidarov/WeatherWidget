@@ -9,9 +9,15 @@ const MainContent = () => {
   return (
     <div className={style.mainContent}>
       <div className={style.mainContainer}>
-        <Header fetchWeather={fetchWeather} />
-        <Main weather={weather} details={details} />
-        <Footer forecast={forecast ?? []} />
+        <div className={style.header}>
+          <Header fetchWeather={fetchWeather} />
+        </div>
+        <div className={style.main}>
+          <Main weather={weather} details={details} />
+        </div>
+        <div className={style.footer}>
+          <Footer forecast={forecast ?? []} />
+        </div>
       </div>
     </div>
   );

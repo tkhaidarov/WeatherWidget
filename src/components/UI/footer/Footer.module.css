@@ -3,6 +3,30 @@
     flex-direction: column;
     row-gap: 3rem;
 }
+.switchContainer{
+    width: 100%;
+    display: flex;
+    column-gap: 1rem;
+}
+.switchBtn{
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.5);
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+}
+.switchBtn:hover{
+    background: rgba(71, 147, 255, 0.2);
+}
+.switchBtn.active{
+    background: rgba(0, 107, 255, 0.4);
+}
 .forecast{
     display: flex;
     align-items: center;

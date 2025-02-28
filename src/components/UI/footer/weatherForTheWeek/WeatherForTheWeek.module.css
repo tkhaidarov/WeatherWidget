@@ -1,53 +1,90 @@
-.weatherCard{
-    width: 15rem;
-    height: 20rem;
-    border-radius: 1rem;
-    background-color: rgba(71, 147, 255, 0.2);
-    box-shadow: 0 3px 20px 0 rgba(147, 144, 144, 0.28);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.title{
-    margin-bottom: .7rem;
-    font-weight: 500;
-    font-size: 18px;
-    color: #000;
+.weatherCard {
+  width: 14.5rem;
+  height: 20rem;
+  border-radius: 1rem;
+  background-color: rgba(71, 147, 255, 0.2);
+  box-shadow: 0 3px 20px 0 rgba(147, 144, 144, 0.28);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
-.weatherIcon{
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    width: 5rem;
-    height: 5rem;
+.weatherCard:nth-child(1) {
+  animation-delay: 0s;
 }
-.weatherIcon img{
-    width: 100%;
-    height: 100%;
+.weatherCard:nth-child(2) {
+  animation-delay: 0.2s;
 }
-.nightTemp{
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+.weatherCard:nth-child(3) {
+  animation-delay: 0.4s;
 }
-.today{
-    background-color: rgba(0, 107, 255, 0.4);
+.weatherCard:nth-child(4) {
+  animation-delay: 0.6s;
 }
-.currentDate{
-    font-weight: 500;
-    font-size: 14px;
-    color: #4d535f;
+.weatherCard:nth-child(5) {
+  animation-delay: 0.8s;
 }
-.currentTemp{
-    font-weight: 500;
-    font-size: 18px;
-    color: #000;
+.weatherCard:nth-child(6) {
+  animation-delay: 1s;
 }
-.nightTemp{
-    font-weight: 400;
-    font-size: 13px;
-    color: #4d535f;
+.weatherCard:nth-child(7) {
+  animation-delay: 1.2s;
 }
-.weatherType{
-    font-weight: 400;
-    font-size: 13px;
-    color: #4d535f;
+.title {
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.weatherIcon {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+.weatherIcon img {
+  width: 100%;
+  height: 100%;
+}
+.nightTemp {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.today {
+  background-color: rgba(71, 147, 255, 0.2);
+  transition: background-color 0.2s ease;
+}
+.todayWeekly {
+  background-color: rgba(0, 107, 255, 0.4);
+}
+.currentDate {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4d535f;
+}
+.currentTemp {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.nightTemp {
+  font-weight: 400;
+  font-size: 13px;
+  color: #4d535f;
+}
+.weatherType {
+  font-weight: 400;
+  font-size: 13px;
+  color: #4d535f;
 }
