@@ -6,9 +6,14 @@
 #### Сборка проекта
 
 ###### Склонировать репозиторий:
-`gh repo clone tkhaidarov/WeatherWidget`
-
+```
+gh repo clone tkhaidarov/WeatherWidget
+```
 ###### Установить зависимости:
-`nmp i`
+```
+nmp i
+```
 ###### Запуск dev-сервера:
-`npm run dev`
+```
+npm run dev
+```
